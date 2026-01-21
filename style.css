@@ -132,7 +132,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 10;
+  z-index: 999;
 }
 
 .logo {
@@ -432,6 +432,13 @@ ul {
   justify-content: center;
   position: relative;
   overflow: hidden;
+}
+
+.window-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .placeholder-screen {
