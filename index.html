@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joshua High | Full Stack Developer</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="ambient-bg"></div>
+  <!-- Header / Navigation -->
+  <header class="hero" id="home">
+    <nav class="main-nav">
+      <div class="logo">JH</div>
+      <ul class="nav-links">
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#experience">Exp</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="/JoshHighResume2026NEW.pdf" download class="nav-resume-btn" aria-label="Download Resume">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="hero-elements">
+      <div class="floating-shape"
+        style="top: 20%; left: 10%; width: 300px; height: 300px; background: rgba(14, 165, 233, 0.2);"></div>
+      <div class="floating-shape"
+        style="bottom: 20%; right: 10%; width: 400px; height: 400px; background: rgba(80, 0, 0, 0.3);"></div>
+    </div>
+
+    <div class="container hero-content">
+      <h1>Hi, I'm <span class="text-gradient">Joshua High</span>.</h1>
+      <p>Full Stack Developer & MIS Graduate building high-performance digital experiences.</p>
+      <div style="display: flex; gap: 1rem; justify-content: center;" class="btn-group">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn">Get In Touch</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Me Section -->
+  <section class="about-section" id="about">
+    <div class="container about-container">
+      <div class="about-content">
+        <h2>About Me</h2>
+        <p class="about-lead">I'm a web developer who thrives at the intersection of creativity and code. My focus is on
+          building fast, accessible, and visually compelling digital experiences.</p>
+        <p>Whether it's front-end design or full-stack architecture, I love crafting solutions that feel intuitive and
+          special. I'm passionate about writing clean, maintainable code and staying current with the latest web
+          technologies.</p>
+        <p>When I'm not coding, I enjoy creating content, building apps, and learning code concepts through YouTube. I'm
+          always eager to take on new challenges and collaborate with teams to build innovative solutions that make real
+          world problems easier to manage.</p>
+
+        <div class="about-actions">
+          <a href="#" class="btn btn-primary">Download Résumé</a>
+          <a href="#contact" class="btn">Let's Connect</a>
+        </div>
+      </div>
+      <div class="about-image">
+        <!-- Portrait -->
+        <img src="/Portrait.jpg" alt="Joshua High" class="portrait-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section (Node Graph) -->
+  <section class="skills-section" id="skills">
+    <div class="container">
+      <h2>Data Modeling & Skills</h2>
+      <p style="color: var(--color-text-muted); margin-bottom: 2rem;">Interactive Knowledge Graph</p>
+      <div class="canvas-container">
+        <canvas id="skillsCanvas"></canvas>
+        <div class="skill-overlay">
+          <!-- Fallback/Overlay for SEO -->
+          <span class="sr-only">C#, Python, SQL, HTML, CSS, JavaScript, WordPress, Vercel, Git, Database Design</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Curriculum Roadmap Section -->
+  <section class="roadmap-section" id="curriculum">
+    <div class="container">
+      <h2>MIS Curriculum Roadmap</h2>
+      <p style="text-align: center; color: var(--color-text-muted); margin-bottom: 3rem;">My Journey through Texas A&M
+      </p>
+
+      <div class="roadmap-container">
+
+        <!-- Module 1 -->
+        <div class="roadmap-node expanded-node">
+          <div class="node-marker">1</div>
+          <div class="roadmap-content">
+            <span class="semester-badge">Semester 1: The Foundation</span>
+            <h3 class="roadmap-title">Foundations of Business Computing</h3>
+            <p class="roadmap-desc">The start of the technical journey, focusing on the logic behind business
+              applications and algorithmic thinking.</p>
+
+            <div class="roadmap-grid">
+              <div class="roadmap-column">
+                <h4>Key Concepts</h4>
+                <ul>
+                  <li>Algorithmic Logic & Flowcharts</li>
+                  <li>Python Syntax & Data Structures</li>
+                  <li>Business Process Modeling</li>
+                </ul>
+              </div>
+              <div class="roadmap-column">
+                <h4>Practical Application</h4>
+                <p>Developed script-based tools to automate simple file handling tasks, reducing manual data entry time.
+                </p>
+              </div>
+            </div>
+            <span class="roadmap-stats">Python • Logic Design • Automation</span>
+          </div>
+        </div>
+
+        <!-- Module 2 -->
+        <div class="roadmap-node expanded-node">
+          <div class="node-marker">2</div>
+          <div class="roadmap-content">
+            <span class="semester-badge">Semester 2: Data Architecture</span>
+            <h3 class="roadmap-title">Database Management Systems</h3>
+            <p class="roadmap-desc">Understanding that data is the lifeblood of modern business. We moved from simple
+              file storage to complex relational architectures.</p>
+
+            <div class="roadmap-grid">
+              <div class="roadmap-column">
+                <h4>Key Concepts</h4>
+                <ul>
+                  <li>Relational Database Design</li>
+                  <li>SQL (DDL/DML) & Normalization (3NF)</li>
+                  <li>Entity-Relationship (ER) Diagramming</li>
+                </ul>
+              </div>
+              <div class="roadmap-column">
+                <h4>Practical Application</h4>
+                <p>Designed a normalized schema for a hypothetical e-commerce inventory system, handling complex
+                  many-to-many relationships.</p>
+              </div>
+            </div>
+            <span class="roadmap-stats">SQL • MySQL • ERD Design</span>
+          </div>
+        </div>
+
+        <!-- Module 3 -->
+        <div class="roadmap-node expanded-node">
+          <div class="node-marker">3</div>
+          <div class="roadmap-content">
+            <span class="semester-badge">Semester 3: Architecture & Design</span>
+            <h3 class="roadmap-title">Systems Analysis & Design</h3>
+            <p class="roadmap-desc">Bridging the gap between stakeholder needs and technical specifications. Learning
+              the "Blueprinting" of software.</p>
+
+            <div class="roadmap-grid">
+              <div class="roadmap-column">
+                <h4>Key Concepts</h4>
+                <ul>
+                  <li>Agile & Scrum Methodologies</li>
+                  <li>Requirement Gathering (User Stories)</li>
+                  <li>UML Modeling & System Architecture</li>
+                </ul>
+              </div>
+              <div class="roadmap-column">
+                <h4>Practical Application</h4>
+                <p>Led a student team in drafting a full technical specification document for a campus event management
+                  app.</p>
+              </div>
+            </div>
+            <span class="roadmap-stats">Agile • UML • SDLC</span>
+          </div>
+        </div>
+
+        <!-- Module 4 -->
+        <div class="roadmap-node expanded-node">
+          <div class="node-marker">4</div>
+          <div class="roadmap-content">
+            <span class="semester-badge">Semester 4: Application Development</span>
+            <h3 class="roadmap-title">Advanced C# & .NET Construction</h3>
+            <p class="roadmap-desc">Moving from theory to production. Building robust, object-oriented business
+              applications.</p>
+
+            <div class="roadmap-grid">
+              <div class="roadmap-column">
+                <h4>Key Concepts</h4>
+                <ul>
+                  <li>Object-Oriented Programming (OOP)</li>
+                  <li>MVC (Model-View-Controller) Pattern</li>
+                  <li>API Integration & Async Programming</li>
+                </ul>
+              </div>
+              <div class="roadmap-column">
+                <h4>Practical Application</h4>
+                <p>Built the "SaaS Lawn Mowing" feature-rich web app, implementing full CRUD operations and user
+                  authentication.</p>
+              </div>
+            </div>
+            <span class="roadmap-stats">C# • .NET Core • Visual Studio</span>
+          </div>
+        </div>
+
+        <!-- Module 5 -->
+        <div class="roadmap-node expanded-node">
+          <div class="node-marker">5</div>
+          <div class="roadmap-content">
+            <span class="semester-badge">Final Semester: The Capstone</span>
+            <h3 class="roadmap-title">Strategy & Implementation</h3>
+            <p class="roadmap-desc">The culmination of the MIS degree. Consulting for a real-world client to solve a
+              critical business problem.</p>
+
+            <div class="roadmap-grid">
+              <div class="roadmap-column">
+                <h4>Key Concepts</h4>
+                <ul>
+                  <li>Client Relationship Management</li>
+                  <li>Full-Stack Deployment Life-Cycle</li>
+                  <li>Tech Stack Selection & Justification</li>
+                </ul>
+              </div>
+              <div class="roadmap-column">
+                <h4>Practical Application</h4>
+                <p>Delivered a complete Digital Transformation package for a local SME, modernizing their legacy client
+                  tracking system.</p>
+              </div>
+            </div>
+            <span class="roadmap-stats">Consulting • Deployment • Leadership</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects-section" id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-container">
+
+        <!-- Project 1 -->
+        <article class="project-row">
+          <div class="project-visual">
+            <div class="browser-window">
+              <div class="window-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="address-bar">lawn-manager.saas</span>
+              </div>
+              <div class="window-content">
+                <img src="/JasperCust.png" alt="SaaS Dashboard Preview" class="window-img">
+              </div>
+            </div>
+          </div>
+          <div class="project-details">
+            <div class="detail-header">
+              <span class="project-id">ID: SAAS-001</span>
+              <span class="status-indicator">● LIVE</span>
+              <div class="perf-badge-row">
+                <span class="perf-badge">⚡ Ultra Fast</span>
+                <span class="perf-badge">📱 Mobile Ready</span>
+              </div>
+            </div>
+            <h3 class="project-title">SaaS Lawn Mowing App</h3>
+            <p class="project-lead">A full-stack business management platform designed to bridge the gap between manual
+              scheduling and automated business logic.</p>
+
+            <div class="deep-dive-block">
+              <h4>The Challenge</h4>
+              <p>Service providers often struggle with managing real-time customer data, scheduling, and pricing without
+                significant manual overhead. The goal was to eliminate these inefficiencies.</p>
+            </div>
+
+            <div class="deep-dive-block">
+              <h4>The Solution</h4>
+              <p>I architected a database-backed solution using <strong>C#</strong> and <strong>SQL</strong> that
+                handles real-time logic for pricing and route optimization. The system scales effortlessly with user
+                growth.</p>
+            </div>
+
+            <div class="tech-stack-list">
+              <span>C#</span>
+              <span>SQL</span>
+              <span>.NET Core</span>
+              <span>MVC Architecture</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="/JasperGreenTeam11Phase3 (1).zip" download class="btn btn-outline github-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Download Source
+              </a>
+              <!-- <a href="#" class="btn btn-primary">Live Demo</a> -->
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-row reversed">
+          <div class="project-visual">
+            <div class="browser-window">
+              <div class="window-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="address-bar">deli-pos.internal</span>
+              </div>
+              <div class="window-content">
+                <div class="placeholder-screen">DELI POS SYSTEM</div>
+              </div>
+            </div>
+          </div>
+          <div class="project-details">
+            <div class="detail-header">
+              <span class="project-id">ID: DELI-SYS-09</span>
+              <span class="status-indicator">● PROJECT</span>
+              <div class="perf-badge-row">
+                <span class="perf-badge">☕ Java Swing</span>
+                <span class="perf-badge">📊 Simulation</span>
+              </div>
+            </div>
+            <h3 class="project-title">Deli Management System</h3>
+            <p class="project-lead">A comprehensive simulation of a deli restaurant's operations, handling orders,
+              inventory, and point-of-sale transactions.</p>
+
+            <div class="deep-dive-block">
+              <h4>The Challenge</h4>
+              <p>Simulating complex business logic requires robust object-oriented design. The goal was to
+                mathematically model inventory depletion and financial tracking in real-time.</p>
+            </div>
+
+            <div class="deep-dive-block">
+              <h4>The Solution</h4>
+              <p>Built a classic desktop application using <strong>Java</strong> and <strong>Object Oriented
+                  Principles</strong>. Features a graphical interface for order entry and backend logic for daily sales
+                reporting.</p>
+            </div>
+
+            <div class="tech-stack-list">
+              <span>Java</span>
+              <span>OOP</span>
+              <span>GUI Design</span>
+              <span>Data Structures</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="/GroupBProject3.zip" download class="btn btn-outline github-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+                Download Source
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-row">
+          <div class="project-visual">
+            <div class="browser-window">
+              <div class="window-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="address-bar">sports-pro.admin</span>
+              </div>
+              <div class="window-content">
+                <div class="placeholder-screen">SPORTS PRO ADMIN</div>
+              </div>
+            </div>
+          </div>
+          <div class="project-details">
+            <div class="detail-header">
+              <span class="project-id">ID: SPORT-SYS-05</span>
+              <span class="status-indicator">● LIVE</span>
+              <div class="perf-badge-row">
+                <span class="perf-badge">🏆 League Mgmt</span>
+                <span class="perf-badge">👥 Team Roster</span>
+              </div>
+            </div>
+            <h3 class="project-title">Sports Pro Administration</h3>
+            <p class="project-lead">A centralized platform for managing sports leagues, including team registrations,
+              player stats, and season scheduling.</p>
+
+            <div class="deep-dive-block">
+              <h4>The Challenge</h4>
+              <p>League administrators needed a unified tool to handle hundreds of player records and match schedules
+                without relying on spreadsheets. Data integrity was key.</p>
+            </div>
+
+            <div class="deep-dive-block">
+              <h4>The Solution</h4>
+              <p>Developed a full-stack solution enabling seamless CRUD operations for teams and players. Implemented
+                role-based access for coaches and administrators.</p>
+            </div>
+
+            <div class="tech-stack-list">
+              <span>C# / .NET</span>
+              <span>SQL Server</span>
+              <span>MVC</span>
+              <span>Authentication</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="/Sports-Pro-All-Functionality (1).zip" download class="btn btn-outline github-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Download Source
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Education -->
+  <section class="experience-section" id="experience">
+    <div class="container">
+      <h2 style="margin-bottom: 3rem;">Experience & Education</h2>
+
+      <div class="experience-container">
+
+        <!-- Experience 1: CoLabAI -->
+        <div class="experience-card featured-exp">
+          <div class="exp-header">
+            <div class="exp-role-group">
+              <h3>Founder & Lead Developer</h3>
+              <span class="company-name">CoLabAI (Post-Graduation)</span>
+            </div>
+            <span class="exp-date">Jan 2026 - Present</span>
+          </div>
+
+          <p class="exp-lead">Architected and launched a full-stack AI platform helping founders validate startup ideas
+            in 30 days.</p>
+
+          <div class="exp-details-grid">
+            <div class="exp-column">
+              <h4>Core Features Built</h4>
+              <ul class="feature-list">
+                <li><strong>Market Validation Engine:</strong> AI-driven analysis of 50k+ market signals to predict
+                  demand.</li>
+                <li><strong>Co-Founder Matching:</strong> Algorithm connecting technical and non-technical founders.
+                </li>
+                <li><strong>Investor Asset Gen:</strong> Automated creation of pitch decks and financial models.</li>
+              </ul>
+            </div>
+            <div class="exp-column">
+              <h4>Tech & Impact</h4>
+              <p>Built with <strong>Next.js</strong> and <strong>AI Integration</strong>. Validated idea demand for
+                users, saving months of dev time.</p>
+              <div class="tech-tags">
+                <span>Next.js</span>
+                <span>AI API</span>
+                <span>SaaS</span>
+                <span>Vercel</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 2: Aggie Business Kings -->
+        <div class="experience-card">
+          <div class="exp-header">
+            <div class="exp-role-group">
+              <h3>Recruitment Chair & Leader</h3>
+              <span class="company-name">Aggie Business Kings</span>
+            </div>
+            <span class="exp-date">College Station, TX</span>
+          </div>
+
+          <div class="impact-stats">
+            <div class="stat-item">
+              <span class="stat-value">Recruitment</span>
+              <span class="stat-desc">Directed outreach & member selection for 50+ candidates.</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">Networking</span>
+              <span class="stat-desc">Represented org at major professional events.</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">Community</span>
+              <span class="stat-desc">Led service engagement projects with local businesses.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="experience-card education-card">
+          <div class="exp-header">
+            <div class="exp-role-group">
+              <h3>B.B.A. in Management Information Systems</h3>
+              <span class="company-name">Texas A&M University</span>
+            </div>
+            <span class="exp-date">Dec 2025</span>
+          </div>
+          <p class="exp-lead">Comprehensive technical degree focused on <strong>Systems Analysis</strong>,
+            <strong>Database Management</strong>, and <strong>Application Development</strong>.
+          </p>
+          <div class="cyber-qual">
+            <span class="icon">🛡️</span>
+            <span>Includes <strong>Cybersecurity Qualifications</strong>: Secure Coding & Data Integrity
+              Standards</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <footer class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-card-wrapper">
+        <h2 class="contact-headline">Ready to Ship?</h2>
+        <p class="contact-subhead">From concept to deployment, I build software that solves business problems. I'm
+          currently available for full-time opportunities.</p>
+
+        <div class="contact-grid">
+          <a href="mailto:high.joshua42@gmail.com" class="contact-tile">
+            <span class="tile-icon">✉️</span>
+            <span class="tile-label">Email Me</span>
+            <span class="tile-value">high.joshua42@gmail.com</span>
+          </a>
+          <a href="https://www.linkedin.com/in/joshhigh2025" target="_blank" class="contact-tile">
+            <span class="tile-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+            </span>
+            <span class="tile-label">Connect</span>
+            <span class="tile-value">LinkedIn</span>
+          </a>
+          <a href="https://github.com/Ralfdabald" target="_blank" class="contact-tile">
+            <span class="tile-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+              </svg>
+            </span>
+            <span class="tile-label">Review Code</span>
+            <span class="tile-value">GitHub</span>
+          </a>
+        </div>
+
+        <div class="footer-badge-row">
+          <div class="cyber-badge footer-ver">
+            <div class="cyber-icon">🛡️</div>
+            <div class="cyber-content">
+              <h4>Cybersecurity Standards</h4>
+              <p>Committed to <strong>Secure Coding</strong> & <strong>Data Integrity</strong>.</p>
+            </div>
+          </div>
+          <p class="copyright">© 2026 Joshua High. Built with performance in mind.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
