@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --color-maroon: #500000;
   --color-maroon-light: #800000;
@@ -184,6 +188,7 @@ ul {
 .text-gradient {
   background: linear-gradient(to right, var(--color-maroon), var(--color-maroon-light));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -1083,16 +1088,17 @@ ul {
   margin-bottom: 1.5rem;
   background: linear-gradient(135deg, var(--color-text-main) 0%, var(--color-slate) 100%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .contact-subhead {
   font-size: 1.2rem;
   color: var(--color-text-muted);
   max-width: 600px;
-  margin-bottom: 4rem;
+  margin: 0 auto 4rem;
   line-height: 1.6;
+  text-align: center;
 }
 
 .contact-grid {
@@ -1192,18 +1198,113 @@ ul {
   color: var(--color-text-muted);
 }
 
+/* Mobile Responsiveness & Fixes */
 @media (max-width: 768px) {
-  .contact-grid {
+
+  /* Fix nav covering name/content */
+  .main-nav {
+    padding: 1rem 5%;
+    position: relative;
+    /* Switch from absolute to prevent overlap on small screens */
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .nav-links li:not(:last-child) {
+    display: none;
+    /* Hide non-essential links or simplify */
+  }
+
+  .hero {
+    padding-top: 2rem;
+    min-height: auto;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.5rem, 12vw, 4rem);
+    margin-top: 1rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+  }
+
+  /* De-cramp sections */
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  section {
+    padding: 4rem 0;
+  }
+
+  /* About Me Stack */
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .about-actions {
+    justify-content: center;
+  }
+
+  .portrait-img {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  /* Project Row Stack */
+  .project-row,
+  .project-row.reversed {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .project-visual {
+    order: -1;
+  }
+
+  /* Roadmap Stack */
+  .roadmap-grid {
     grid-template-columns: 1fr;
   }
 
+  /* Contact Grid */
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
   .contact-headline {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+  }
+
+  .contact-subhead {
+    font-size: 1rem;
+    padding: 0 1rem;
   }
 }
 
-@media (max-width: 768px) {
+/* Extra small screens fix */
+@media (max-width: 480px) {
   .hero h1 {
-    font-size: 3rem;
+    font-size: 2.2rem;
+  }
+
+  .btn {
+    padding: 0.8rem 1.5rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .btn-group {
+    flex-direction: column;
+    width: 100%;
   }
 }
